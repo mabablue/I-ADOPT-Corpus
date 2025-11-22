@@ -1,20 +1,44 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
-ex:C3 a iop:Variable ;
-    rdfs:label "Cloud cover" ;
-    rdfs:comment "The amount of sky estimated to be covered by all cloud types (cloud amount). The estimate is made to the nearest okta (eighth) and is reported on a scale which is essentially one of the nearest eighth, except that figures 0 and 8 on the scale signify a completely clear and cloudy sky, respectively, with consequent adjustment to the adjacent 1 and 7 okta intervals." ;
-    ex:issue "https://github.com/i-adopt/examples/issues/20" ;
-    iop:hasMatrix <http://vocabs.lter-europe.net/EnvThes/21920> ;
-    iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/cloud> ;
-    iop:hasProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> .
+ex:C3
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Cloud cover" ;
+    skos:definition 
+        """The amount of sky estimated to be covered by all cloud types.""" ;
+    rdfs:comment
+        """sky, cloud, (amount covered -> area fraction)""" ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q8074> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q527> ;
+    iop:hasProperty 
+        _:b0 .
 
-<http://vocabs.lter-europe.net/EnvThes/21920> a iop:Entity ;
-    rdfs:label "atmosphere" .
+<https://www.wikidata.org/wiki/Q8074>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "cloud" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> a iop:Property ;
-    rdfs:label "area fraction" .
+<https://www.wikidata.org/wiki/Q527>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "sky" .
 
-<https://vocabulary.actris.nilu.no/actris_vocab/cloud> a iop:Entity ;
-    rdfs:label "cloud" .
+_:b0
+    a 
+        iop:Property ;
+    rdfs:label 
+        "area fraction" .
