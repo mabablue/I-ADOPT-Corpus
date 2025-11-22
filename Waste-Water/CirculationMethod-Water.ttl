@@ -11,8 +11,10 @@ ex:Circulation-Method-in-Tube
         iop:Variable ;
     rdfs:label 
         "Circulation-Method-in-Tube" ;
+    rdfs:comment 
+        """Circulation method (gravity, forced, ...) of water in canalisation pipe""" ;
     iop:hasObjectOfInterest 
-        ex:Water ;
+        <https://www.wikidata.org/wiki/Q283> ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q41551> ;
     iop:hasProperty 
@@ -23,7 +25,7 @@ ex:Circulation-Method-in-Tube
              iop:constrains <https://www.wikidata.org/wiki/Q41551> ;
         ] .
 
-ex:Water
+<https://www.wikidata.org/wiki/Q283>
     a 
         iop:Entity ;
     rdfs:label 
