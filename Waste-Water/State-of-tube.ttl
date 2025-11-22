@@ -11,9 +11,9 @@ ex:State-of-tube
         iop:Variable ;
     rdfs:label 
         "State of connection pipe" ;
-    rdfs:comment 
+    skos:definition 
         """Condition (faulty, cracked, ... ) of pipe connection in plastic with a diametre of 30 cm.""" ;
-    skos:definition
+    rdfs:comment
          "condition, pipe connection; plastic, diametre of 30 cm" ; 
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP60.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
