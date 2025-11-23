@@ -1,0 +1,55 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/bio/example/> .
+
+
+ex:C27
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "concentration of endosulfane sulfate in wet flesh of ostrea edulis" ;
+    rdfs:comment 
+        """Mass concentration of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg.""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q170494> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/wiki/Q729678> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q589446> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "normalization: per unit mass" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q589446> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "wet" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q170494> ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "endosulfane sulfate" .
+
+<https://www.wikidata.org/wiki/Q170494>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "body" .
+
+<https://www.wikidata.org/wiki/Q589446>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "mass concentration" .
+
+<https://www.wikidata.org/wiki/Q729678>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "ostrea edulis" .
