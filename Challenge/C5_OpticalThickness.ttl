@@ -3,6 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+
 
 ex:C5
     a 
@@ -13,13 +16,13 @@ ex:C5
         """Atmospheric optical thickness of particulate organic matter at 550nm under ambient conditions.""" ;
     rdfs:comment
         """Atmospheric, optical thickness, particulate matter, organic, 550nm, under ambient conditions.""" ;
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     iop:hasObjectOfInterest 
         _:b0 ;
