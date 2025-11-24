@@ -3,6 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C4
     a 
@@ -13,11 +14,11 @@ ex:C4
         """Atmospheric boundary layer height defined by temperature inversion.""" ;
     rdfs:comment
         """Atmospheric boundary layer, height, temperature inversion (ADD atmosphere, above ground surface).""" ;    
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP16.yaml> ;
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
-    iop:pattern
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP69.yaml> ;
     iop:hasObjectOfInterest 
         _:b0 ;
