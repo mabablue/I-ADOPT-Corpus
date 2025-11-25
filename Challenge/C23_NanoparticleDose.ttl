@@ -6,43 +6,53 @@
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C23
     a 
         iop:Variable ;
     rdfs:label 
         "dose of applied nanomaterial internalised by a specific cell population (or per single cell) -mass per cell area" ;
-    rdfs:comment 
-        """Correlation of dose and response for nanomaterials toxicity assessment requires information on the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell) and is dependent on a number of factors including the exposure time, the particle density (i.e., whether settling occurs and thus the distribution of particles in the medium is non-homogeneous affecting the local concentration at the cell surface) etc.""" ;
+    skos:definition 
+        """the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell)""" ;
+    rdfs:comment
+        """nanomaterial; location: intracellular; cell membrane; mass; normalization: per area""" ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     iop:hasObjectOfInterest 
-        <http://purl.bioontology.org/ontology/npo#NPO_199> ;
+        <https://www.wikidata.org/wiki/Q967847> ;
     iop:hasMatrix 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q54888819> ;
     iop:hasProperty 
-        _:b1 ;
+        <https://www.wikidata.org/wiki/Q11423> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
-             iop:constrains <http://purl.bioontology.org/ontology/npo#NPO_199> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q967847> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "normalization: per area" ;
-             iop:constrains _:b1 ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11423> ;
         ] .
 
-<http://purl.bioontology.org/ontology/npo#NPO_199>
+<https://www.wikidata.org/wiki/Q967847>
     a 
         iop:Entity ;
     rdfs:label 
         "nanomaterial" .
 
-_:b0
+<https://www.wikidata.org/wiki/Q54888819>
     a 
         iop:Entity ;
     rdfs:label 
         "cell membrane" .
 
-_:b1
+<https://www.wikidata.org/wiki/Q11423>
     a 
         iop:Property ;
     rdfs:label 
