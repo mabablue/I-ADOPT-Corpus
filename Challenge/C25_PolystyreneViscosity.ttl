@@ -1,19 +1,45 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
-ex:C25 a iop:Variable ;
-    rdfs:label "Dynamic shear viscosity of polystyrene PS042" ;
-    rdfs:comment "Dynamic shear viscosity of polystyrene PS042 under the testing conditions of DIN 51810-1." ;
-    ex:issue "https://github.com/i-adopt/examples/issues/42" ;
-    iop:hasConstraint [ a iop:Constraint ;
-            rdfs:label "dynamic" ;
-            iop:constrains <http://purl.jp/bio/4/id/200906084861039558> ] ;
-    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CHEBI_53276> ;
-    iop:hasProperty <http://purl.jp/bio/4/id/200906084861039558> .
+ex:C25
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Dynamic shear viscosity of polystyrene PS042" ;
+    rdfs:comment 
+        """Dynamic shear viscosity of polystyrene PS042 under the testing conditions of DIN 51810-1.""" ;
+    iop:hasObjectOfInterest 
+        <http://purl.obolibrary.org/obo/CHEBI_53276> ;
+    iop:hasProperty 
+        <http://purl.jp/bio/4/id/200906084861039558> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "type: dynamic" ;
+             iop:constrains <http://purl.jp/bio/4/id/200906084861039558> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: under testing conditions of DIN 51810-1." ;
+             iop:constrains <http://purl.jp/bio/4/id/200906084861039558> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type. PS042" ;
+             iop:constrains <http://purl.obolibrary.org/obo/CHEBI_53276> ;
+        ] .
 
-<http://purl.obolibrary.org/obo/CHEBI_53276> a iop:Entity ;
-    rdfs:label "polystyrene" .
+<http://purl.obolibrary.org/obo/CHEBI_53276>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "polystyrene" .
 
-<http://purl.jp/bio/4/id/200906084861039558> a iop:Property ;
-    rdfs:label "shear viscosity" .
+<http://purl.jp/bio/4/id/200906084861039558>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "shear viscosity" .
