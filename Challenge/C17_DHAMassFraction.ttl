@@ -3,43 +3,50 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C17
     a 
         iop:Variable ;
     rdfs:label 
         "Docosahexaenoic acid content per dry weight (DHA content/ C22:6 n-3 content)" ;
-    rdfs:comment 
+    skos:definition 
         """The amount of docosahexaenoic acid relative to dry weight in an organism.""" ;
+    rdfs:comment "docosahexaenoic acid, organism, mass fraction, dry -> state: dry, ADD: normalization: per unit mass" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     iop:hasObjectOfInterest 
-        <http://purl.obolibrary.org/obo/CHEBI_36005> ;
+        <https://www.wikidata.org/wiki/Q423345> ;
     iop:hasMatrix 
-        <http://vocabs.lter-europe.net/EnvThes/26> ;
+        <https://www.wikidata.org/wiki/Q7239> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/MassFraction> ;
+        <https://www.wikidata.org/wiki/Q899138> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: dry" ;
-             iop:constrains <http://vocabs.lter-europe.net/EnvThes/26> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "normalization: per unit mass" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/MassFraction> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q899138> ;
         ] .
 
-<http://purl.obolibrary.org/obo/CHEBI_36005>
+<https://www.wikidata.org/wiki/Q423345>
     a 
         iop:Entity ;
     rdfs:label 
         "docosahexaenoic acid" .
 
-<http://vocabs.lter-europe.net/EnvThes/26>
+<https://www.wikidata.org/wiki/Q7239>
     a 
         iop:Entity ;
     rdfs:label 
         "organism" .
 
-<http://qudt.org/vocab/quantitykind/MassFraction>
+<https://www.wikidata.org/wiki/Q899138>
     a 
         iop:Property ;
     rdfs:label 
