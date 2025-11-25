@@ -12,15 +12,15 @@
     rdfs:label 
         "ETMP Radial velocity (away from) standard deviation of water current relative to instrument in the water body by high frequency radar" ;
     skos:definition 
-        """Standard deviation of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
-    rdfs:comment "water current, water body, at the sea surface, standard deviation, over the temporal coverage period, sea, velocity, relative to instrument, positive away from the instrument, radial" ;
+        """Standard deviation Radial velocity (away from) inof water current relative to instrument in the water body by high frequency radar, evaluated over the coverage period""" ;
+    rdfs:comment "water current; water body; at the sea surface; standard deviation; over the temporal coverage period; sea; velocity; relative to instrument; positive away from the instrument; radial" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP78.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP81.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q5195029> ;
@@ -34,23 +34,23 @@
         <https://www.wikidata.org/wiki/Q11465> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "relative to instrument" ;
+             rdfs:label "datum: relative to instrument" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "at the sea surface" ;
+             rdfs:label "location: at the sea surface" ;
              iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "over the temporal coverage period" ;
+             rdfs:label "temporal extent: over the temporal coverage period" ;
              iop:constrains <https://www.wikidata.org/wiki/Q159375> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "positive away from the instrument" ;
+             rdfs:label "sign meaning: positive away from the instrument" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "radial" ;
+             rdfs:label "type: radial" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] .
 
