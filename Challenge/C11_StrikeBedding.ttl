@@ -3,27 +3,32 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C11
     a 
         iop:Variable ;
     rdfs:label 
         "Strike of bedding" ;
-    rdfs:comment 
+    skos:definition 
         """Geographic azimuth (relative to true north) at a point observation location, of a horizontal line contained in a sedimentary rock bedding surface. The bedding surface must not be horizontal; the azimuth is reported such that the dip direction of the inclined bedding is to the right when facing in the azimuth direction.""" ;
+    rdfs:comment "line of intersection, sedimentary rock, azimuth, bedding plane, horizontal plane, interpretation: angle measured with the dip direction to the right";
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP25.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP73.yaml> ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q2248079> ;
     iop:hasMatrix 
-        <http://opendata.inrae.fr/thesaurusINRAE/c_5217> ;
+        <https://www.wikidata.org/wiki/Q82480> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/Azimuth> ;
+        <https://www.wikidata.org/wiki/Q124274> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "interpretation: angle measured with the dip direction to the right" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Azimuth> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q124274> ;
         ] .
 
-_:b0
+<https://www.wikidata.org/wiki/Q2248079>
     a 
         iop:Entity ,
         iop:SymmetricSystem ;
@@ -33,13 +38,13 @@ _:b0
         <http://data.bgs.ac.uk/id/GeoscienceThesaurus/Concept/428> ,
         <https://www.wikidata.org/wiki/Q1055798> .
 
-<http://opendata.inrae.fr/thesaurusINRAE/c_5217>
+<https://www.wikidata.org/wiki/Q82480>
     a 
         iop:Entity ;
     rdfs:label 
         "sedimentary rock" .
 
-<http://qudt.org/vocab/quantitykind/Azimuth>
+<https://www.wikidata.org/wiki/Q124274>
     a 
         iop:Property ;
     rdfs:label 
