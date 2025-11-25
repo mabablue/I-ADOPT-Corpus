@@ -13,11 +13,13 @@ ex:someVar
         "UVAD Eastward velocity average in the water by a moored acoustic doppler current profile (ADCP)" ;
     skos:definition 
         """Eastward velocity average in the water by a moored acoustic doppler current profile measured in (m s-1)""" ;
-    rdfs:comment "water current, water body, average value, sea, velocity, eastward, eulerian" ;
+    rdfs:comment "water current; water body; average value; sea; velocity; eastward; eulerian" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q5195029> ;
     iop:hasMatrix 
