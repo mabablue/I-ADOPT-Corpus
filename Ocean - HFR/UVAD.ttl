@@ -12,12 +12,12 @@ ex:someVar
     rdfs:label 
         "UVAD Eastward velocity average in the water by a moored acoustic doppler current profile (ADCP)" ;
     skos:definition 
-        """UVAD (m s-1) - ADCP datafile""" ;
+        """Eastward velocity average in the water by a moored acoustic doppler current profile measured in (m s-1)""" ;
     rdfs:comment "water current, water body, average value, sea, velocity, eastward, eulerian" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q5195029> ;
     iop:hasMatrix 
@@ -30,11 +30,11 @@ ex:someVar
         <https://www.wikidata.org/wiki/Q11465> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "eastward" ;
+             rdfs:label "type: eastward" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "eulerian" ;
+             rdfs:label "type: eulerian" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] .
 
