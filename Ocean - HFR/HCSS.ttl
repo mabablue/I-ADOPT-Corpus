@@ -12,7 +12,7 @@ ex:someVar
     rdfs:label 
         "HCSS Radial velocity variance of water current relative to instrument  in the water body by high frequency radar" ;
     skos:definition 
-        """Radial velocity variance of water current relative to instrument  in the water body by high frequency radar""" ;
+        """Radial velocity variance of water current relative to instrument in the water body by high frequency radar""" ;
     rdfs:comment "water current; water body; at the surface; variance; over the temporal coverage period; sea; velocity; relative to instrument; radial" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
