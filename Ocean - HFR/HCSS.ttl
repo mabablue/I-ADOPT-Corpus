@@ -3,67 +3,76 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:someVar
     a 
         iop:Variable ;
     rdfs:label 
         "HCSS Radial velocity variance of water current relative to instrument  in the water body by high frequency radar" ;
-    rdfs:comment 
+    skos:definition 
         """Variance of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
+    rdfs:comment "water current, water body, at the surface, variance, over the temporal coverage period, sea, velocity, relative to instrument, radial" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP78.yaml> ;
     iop:hasObjectOfInterest 
-        <http://vocab.nerc.ac.uk/collection/S29/current/PE001307/> ;
+        <https://www.wikidata.org/wiki/Q5195029> ;
     iop:hasMatrix 
-        <http://vocab.nerc.ac.uk/collection/S21/current/S21S027/> ;
+        <https://www.wikidata.org/wiki/Q15324> ;
     iop:hasContextObject 
-        <http://opendata.inrae.fr/thesaurusINRAE/c_1384> ;
+        <https://www.wikidata.org/wiki/Q165> ;
     iop:hasStatisticalModifier 
-        <http://purl.obolibrary.org/obo/STATO_0000113> ;
+        <https://www.wikidata.org/wiki/Q175199> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/Velocity> ;
+        <https://www.wikidata.org/wiki/Q11465> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "relative to instrument" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Velocity> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "at the surface" ;
-             iop:constrains <http://vocab.nerc.ac.uk/collection/S21/current/S21S027/> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "over the temporal coverage period" ;
-             iop:constrains <http://purl.obolibrary.org/obo/STATO_0000113> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q175199> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "radial" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Velocity> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] .
 
-<http://vocab.nerc.ac.uk/collection/S29/current/PE001307/>
+<https://www.wikidata.org/wiki/Q5195029>
     a 
         iop:Entity ;
     rdfs:label 
         "water current" .
 
-<http://vocab.nerc.ac.uk/collection/S21/current/S21S027/>
+<https://www.wikidata.org/wiki/Q15324>
     a 
         iop:Entity ;
     rdfs:label 
         "water body" .
 
-<http://purl.obolibrary.org/obo/STATO_0000113>
+<https://www.wikidata.org/wiki/Q175199>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "variance" .
 
-<http://qudt.org/vocab/quantitykind/Velocity>
+<https://www.wikidata.org/wiki/Q11465>
     a 
         iop:Property ;
     rdfs:label 
         "velocity" .
 
-<http://opendata.inrae.fr/thesaurusINRAE/c_1384>
+<https://www.wikidata.org/wiki/Q165>
     a 
         iop:Entity ;
     rdfs:label 
