@@ -1,19 +1,34 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
 
-ex:C22 a iop:Variable ;
-    rdfs:label "Current smoking status" ;
-    rdfs:comment "Smoking status current of a patient" ;
-    ex:issue "https://github.com/i-adopt/examples/issues/39" ;
-    iop:hasConstraint [ a iop:Constraint ;
-            rdfs:label "current" ;
-            iop:constrains <http://purl.obolibrary.org/obo/NCIT_C19796> ] ;
-    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/NCIT_C16960> ;
-    iop:hasProperty <http://purl.obolibrary.org/obo/NCIT_C19796> .
+ex:C22
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Current smoking status" ;
+    rdfs:comment 
+        """Smoking status current of a patient""" ;
+    iop:hasObjectOfInterest 
+        <http://purl.obolibrary.org/obo/NCIT_C16960> ;
+    iop:hasProperty 
+        _:b0 ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "time: current" ;
+             iop:constrains _:b0 ;
+        ] .
 
-<http://purl.obolibrary.org/obo/NCIT_C16960> a iop:Entity ;
-    rdfs:label "patient" .
+<http://purl.obolibrary.org/obo/NCIT_C16960>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "patient" .
 
-<http://purl.obolibrary.org/obo/NCIT_C19796> a iop:Property ;
-    rdfs:label "smoking status" .
+_:b0
+    a 
+        iop:Property ;
+    rdfs:label 
+        "smoking status" .
