@@ -48,4 +48,4 @@ _:b0
     a 
         iop:Property ;
     rdfs:label 
-        "state of pipe connection" .
+        "state" .
