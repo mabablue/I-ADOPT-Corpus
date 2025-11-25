@@ -25,8 +25,11 @@ ex:Variable
         [ a iop:Constraint ;
              rdfs:label "threshold: good if temporal variance is smaller than a maximum variance threshold" ;
              iop:constrains ex:Prop ;
+        ],
+        [ a iop:Constraint ;
+             rdfs:label "controlled list: quality flag" ;
+             iop:constrains ex:Prop ;
         ] .
-
 ex:OoI
     a 
         iop:Entity ;
