@@ -29,19 +29,15 @@ ex:C25
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q146243> ;
     iop:hasProperty 
-        <http://purl.jp/bio/4/id/200906084861039558> ;
+        <https://www.wikidata.org/wiki/Q15152757> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "type: dynamic" ;
-             iop:constrains <http://purl.jp/bio/4/id/200906084861039558> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "condition: under testing conditions of DIN 51810-1." ;
-             iop:constrains <http://purl.jp/bio/4/id/200906084861039558> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "type. PS042" ;
+             rdfs:label "type: PS042" ;
              iop:constrains <https://www.wikidata.org/wiki/Q146243> ;
+        ],
+        [ a iop:Constraint ; 
+            rdfs:label "condition: under testing conditions of DIN 5810-1" ;
+            iop:constrains <https://www.wikidata.org/wiki/Q15152757> ;
         ] .
 
 <https://www.wikidata.org/wiki/Q146243>
@@ -50,8 +46,8 @@ ex:C25
     rdfs:label 
         "polystyrene" .
 
-<http://purl.jp/bio/4/id/200906084861039558>
+<https://www.wikidata.org/wiki/Q15152757>
     a 
         iop:Property ;
     rdfs:label 
-        "shear viscosity" .
+        "dynamic viscosity" .
