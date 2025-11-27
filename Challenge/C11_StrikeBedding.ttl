@@ -17,6 +17,7 @@ ex:C11
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP25.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP73.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/17> ;
 iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
