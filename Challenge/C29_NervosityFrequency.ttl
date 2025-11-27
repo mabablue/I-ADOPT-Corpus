@@ -16,6 +16,8 @@ ex:C29
         """nervousness; patient; frequency; during last 30 days""" ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
+    ex:issue
+        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/35> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q1978097> ;
     iop:hasMatrix 
