@@ -17,6 +17,8 @@ ex:C5
     rdfs:comment
         """Atmospheric, optical thickness, particulate matter, organic, 550nm, under ambient conditions.""" ;
     iopp:pattern
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
+    iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
     iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
@@ -24,6 +26,8 @@ ex:C5
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iopp:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    ex:issue
+        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/7> ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
