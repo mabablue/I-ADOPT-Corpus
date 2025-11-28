@@ -20,6 +20,7 @@ ex:someVar
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP78.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/64> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q5195029> ;
     iop:hasMatrix 
