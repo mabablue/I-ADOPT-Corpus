@@ -32,10 +32,6 @@ ex:State-of-tube
         [ a iop:Constraint ;
              rdfs:label "size:diameter of 30 cm" ;
              iop:constrains ex:PipeConnection ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "controlled list: state of pipe connection" ;
-             iop:constrains _:b0 ;
         ] .
 
 ex:PipeConnection
