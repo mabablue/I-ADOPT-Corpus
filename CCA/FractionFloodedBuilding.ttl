@@ -10,8 +10,14 @@ ex:FractionFloodedBuilding
         iop:Variable ;
     rdfs:label 
         "Fraction of flooded area around building" ;
-    rdfs:comment 
+    skos:definition 
         """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
+    rdfs:comment 
+        """Fraction; area; flooded above 30 cm water level; 5 m buffer around an affected building""" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP74.yaml> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
