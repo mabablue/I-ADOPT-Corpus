@@ -10,8 +10,14 @@ ex:FloodRiskWellbeing
         iop:Variable ;
     rdfs:label 
         "Flood risk index related to wellbeing" ;
-    rdfs:comment 
+    skos:definition 
         """Flood risk index related to well being of residence when water is entering the house on the first floor""" ;
+    rdfs:comment 
+        """Flood risk; index; well being of residence; water is entering the house on the first floor""" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/99" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
