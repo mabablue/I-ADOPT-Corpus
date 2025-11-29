@@ -14,6 +14,11 @@ ex:slvar
         """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm""" ;
     rdfs:comment 
         """solubility; napathalene; deionized water; at room temperature; at 279 nm; """ ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/84" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q179724> ;
     iop:hasMatrix 
