@@ -10,8 +10,14 @@ ex:bpvar
         iop:Variable ;
     rdfs:label 
         "boiling point of benzene" ;
+    skos:definition 
+        """thermodynamic temperature for the boiling point (at the liquid to gas phase transition) of a known purity 99.07 (w/w) liquid sample of benzene at atmospheric pressure""" ;
     rdfs:comment 
-        """measurement of the thermodynamic temperature (or temperature range) for the transformation of a known purity 99.07 liquid sample of benzene into a gas at atmospheric pressure""" ;
+        "thermodynamic temperature; at the liquid to gas phase transition; purity 99.07 (w/w); benzene; at atmospheric pressure" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/78" ; 
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q2270> ;
     iop:hasProperty 
@@ -26,7 +32,7 @@ ex:bpvar
              iop:constrains <https://www.wikidata.org/wiki/Q264647> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: purity 99.07" ;
+             rdfs:label "quality: purity 99.07 (w/w)" ;
              iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
         ] .
 
