@@ -14,8 +14,6 @@
         """Fraction of the flooded area within a 5m buffer around a building which is flooded above a 30 cm water level""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q11500> ;
-    iop:hasMatrix 
-        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q66055> ;
     iop:hasConstraint 
