@@ -18,7 +18,7 @@ ex:bpvar
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/78> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/78" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q2270> ;
     iop:hasProperty 
