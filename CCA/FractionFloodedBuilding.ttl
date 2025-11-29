@@ -1,0 +1,47 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+<http://example.org/iadopt/CCA/FractionFloodedBuilding>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Fraction of flooded area around buidling" ;
+    rdfs:comment 
+        """Fraction of the flooded area within a 5m buffer around a building which is flooded above a 30 cm water level""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q11500> ;
+    iop:hasMatrix 
+        _:b0 ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q66055> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "spatial extent: buffer area of 5 m around an affected building" ;
+             iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: flooded above 30 cm" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11500> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q11500>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "area" .
+
+_:b0
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "reference area" .
+
+<https://www.wikidata.org/wiki/Q66055>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "fraction" .
