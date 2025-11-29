@@ -10,15 +10,8 @@ ex:bpvar
         iop:Variable ;
     rdfs:label 
         "boiling point of benzene" ;
-    skos:definition 
-        """thermodynamic temperature for the transformation of a known purity (99.07% (v/v)) liquid sample of benzene into a gas (boiling point) at 1 atm pressure""" ;
     rdfs:comment 
-        """thermodynamic temperature; at the boiling point -> liquid to gas phase transition; purity (99.07% (v/v)); benzene; at 1 atm pressure""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/78" ;
+        """measurement of the thermodynamic temperature (or temperature range) for the transformation of a known purity (99.07% (v/v)) liquid sample of benzene into a gas at atmospheric pressure""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q2270> ;
     iop:hasProperty 
