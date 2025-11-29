@@ -17,13 +17,11 @@ ex:C22
     skos:definition 
         """Smoking status current of a patient""" ;
     rdfs:comment 
-        """patient; status; time: current; controlled list: smoking status""" ;
+        """patient; smoking status;  time: current""" ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP78.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP83.yaml> ;
     ex:issue
         <https://github.com/mabablue/I-ADOPT-examples-playground/issues/28> ;
     iop:hasObjectOfInterest 
@@ -33,10 +31,6 @@ ex:C22
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "time: current" ;
-             iop:constrains _:b0 ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "controlled list: smoking status" ;
              iop:constrains _:b0 ;
         ] .
 
@@ -50,4 +44,4 @@ _:b0
     a 
         iop:Property ;
     rdfs:label 
-        "status" .
+        "smoking status" .
