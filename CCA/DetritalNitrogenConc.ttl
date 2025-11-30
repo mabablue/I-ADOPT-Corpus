@@ -15,8 +15,10 @@
     rdfs:comment 
         """Labile; detrital -> detrital organic material; nitrogen; concentration -> molar concentration; seabed; sediment; ADD: per unit mass; sea""" ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP79.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/88" ;
     iop:hasObjectOfInterest 
