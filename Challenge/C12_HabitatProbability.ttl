@@ -19,7 +19,7 @@ ex:C12
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP74.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/18> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/18" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q52105> ;
     iop:hasMatrix 
