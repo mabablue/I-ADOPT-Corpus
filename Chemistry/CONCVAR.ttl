@@ -21,11 +21,11 @@ ex:concvar
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q41509> ;
+        <https://www.wikidata.org/wiki/Q672821> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalization: per volume" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q41509> ;
+             rdfs:label "ratio: mole per volume" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q672821> ;
         ] .
 
 _:b0
@@ -33,17 +33,17 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "substance/volume" ;
+        "ratio" ;
     iop:hasNumerator 
         <https://www.wikidata.org/wiki/Q428946> ;
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q36133> .
 
-<https://www.wikidata.org/wiki/Q41509>
+<https://www.wikidata.org/wiki/Q672821>
     a 
         iop:Property ;
     rdfs:label 
-        "mole" .
+        "molarity" .
 
 <https://www.wikidata.org/wiki/Q428946>
     a 
