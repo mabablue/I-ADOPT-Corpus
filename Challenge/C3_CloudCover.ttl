@@ -21,14 +21,19 @@ ex:C3
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> .
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "ratio: area per area" ;
+             iop:constrains <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> ;
+        ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "area/reference area" ;
+        "ratio" ;
     iop:hasNumerator 
         <https://www.wikidata.org/wiki/Q8074> ;
     iop:hasDenominator 
