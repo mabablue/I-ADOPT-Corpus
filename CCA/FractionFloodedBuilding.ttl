@@ -4,32 +4,33 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:FractionFloodedBuilding
     a 
         iop:Variable ;
     rdfs:label 
         "Fraction of flooded area around building" ;
-    skos:definition 
-        """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
     rdfs:comment 
-        """Fraction; area; flooded above 30 cm water level; 5 m buffer around an affected building""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP74.yaml> ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" ;
+        """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q66055> ;
+        uom:AreaFraction ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "spatial extent: buffer area of 5 m around an affected building" ;
+             rdfs:label "ratio: area per area" ;
+             iop:constrains uom:AreaFraction ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: flooded above 30 cm" ;
              iop:constrains _:b1 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: flooded above a 30 cm water level" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11500> ;
+             rdfs:label "spatial extent: buffer area of 5m around an affected building" ;
+             iop:constrains _:b2 ;
         ] .
 
 _:b0
@@ -37,26 +38,26 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "flooded area/surrounding area" ;
+        "ratio" ;
     iop:hasNumerator 
-      <https://www.wikidata.org/wiki/Q11500> ;
-    iop:hasDenominator        
-       _:b1 .  
+        _:b1 ;
+    iop:hasDenominator 
+        _:b2 .
 
-<https://www.wikidata.org/wiki/Q66055>
+uom:AreaFraction
     a 
         iop:Property ;
     rdfs:label 
-        "fraction" .
-
-<https://www.wikidata.org/wiki/Q11500>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "area" .
+        "area fraction" .
 
 _:b1
     a 
         iop:Entity ;
     rdfs:label 
-        "reference area" .
+        "flooded area" .
+
+_:b2
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "surrounding area" .
