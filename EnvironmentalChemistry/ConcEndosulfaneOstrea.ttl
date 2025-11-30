@@ -29,16 +29,14 @@ ex:EC1
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/89> ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q170494> ;
     iop:hasContextObject 
         <https://www.wikidata.org/wiki/Q729678> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q589446> ;
+        <https://www.wikidata.org/wiki/Q11423> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: per unit mass" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q589446> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11423> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state:wet" ;
@@ -62,11 +60,11 @@ _:b0
     rdfs:label 
         "body" .
 
-<https://www.wikidata.org/wiki/Q589446>
+<https://www.wikidata.org/wiki/Q11423>
     a 
         iop:Property ;
     rdfs:label 
-        "mass concentration" .
+        "mass" .
 
 <https://www.wikidata.org/wiki/Q729678>
     a 
