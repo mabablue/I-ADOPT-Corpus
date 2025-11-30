@@ -13,8 +13,7 @@ ex:EC1
     skos:definition 
         """Mass concentration of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg.""" ;
     rdfs:comment
-        """Mass concentration; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: normalization: per unit mass. 
-           10 for property:specific, 17 for property:concentration, 30 for matrix, 71 for constraint:normalization""" ;
+        """Mass concentration; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: normalization: per unit mass.""" ;
     iopp:Pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
     iopp:Pattern
@@ -29,7 +28,7 @@ ex:EC1
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/89> ;
     iop:hasObjectOfInterest 
-        <http://vocab.nerc.ac.uk/collection/S27/current/CS003625/> ;
+        _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q170494> ;
     iop:hasContextObject 
@@ -44,13 +43,18 @@ ex:EC1
         [ a iop:Constraint ;
              rdfs:label "state:wet" ;
              iop:constrains <https://www.wikidata.org/wiki/Q170494> ;
-        ] .
+        ]  .
 
-<http://vocab.nerc.ac.uk/collection/S27/current/CS003625/>
+_:b0
     a 
-        iop:Entity ;
+        iop:Entity ,
+        iop:AsymmetricSystem ;
     rdfs:label 
-        "endosulfane sulfate" .
+        "substance/body" ;
+    iop:hasNumerator 
+        <http://vocab.nerc.ac.uk/collection/S27/current/CS003625/> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/wiki/Q170494> .
 
 <https://www.wikidata.org/wiki/Q170494>
     a 
@@ -69,3 +73,9 @@ ex:EC1
         iop:Entity ;
     rdfs:label 
         "ostrea edulis" .
+
+<http://vocab.nerc.ac.uk/collection/S27/current/CS003625/>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "endosulfane sulfate" .
