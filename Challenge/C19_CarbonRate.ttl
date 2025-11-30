@@ -29,7 +29,7 @@ ex:C19
         <https://www.wikidata.org/wiki/Q1366187> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalization: per mass" ;
+             rdfs:label "normalization: per time" ;
              iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
         ] ,
         [ a iop:Constraint ;
