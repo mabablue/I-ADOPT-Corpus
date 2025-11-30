@@ -15,7 +15,7 @@ ex:C23
     rdfs:label 
         "dose of applied nanomaterial internalised by a specific cell population (or per single cell) -mass per cell area" ;
     skos:definition 
-        """the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell)""" ;
+        """the amount of the applied dose of nanomaterial that has been internalised by a cell population, mass per cell area""" ;
     rdfs:comment
         """nanomaterial; location: intracellular; cell membrane; mass; normalization: per area""" ;
     iop:pattern 
@@ -34,6 +34,8 @@ ex:C23
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/29" ;
     iop:hasObjectOfInterest 
         _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q20088819> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q1907514> ;
     iop:hasConstraint 
@@ -56,6 +58,12 @@ _:b0
         <https://www.wikidata.org/wiki/Q967847> ;
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q54888819> .
+
+<https://www.wikidata.org/wiki/Q20088819>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "group of cells" .
 
 <https://www.wikidata.org/wiki/Q1907514>
     a 
