@@ -50,7 +50,7 @@ ex:C12
     a 
         iop:Entity ;
     rdfs:label 
-        "Europe" .
+        "European Union" .
 
 <https://lod.nal.usda.gov/nalt/137027>
     a 
