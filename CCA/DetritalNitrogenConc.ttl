@@ -14,9 +14,10 @@
         """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
     rdfs:comment 
         """Labile; detrital -> detrital organic material; nitrogen; concentration -> molar concentration; seabed; sediment; ADD: per unit mass; sea""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/88" ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q165> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q672821> ;
@@ -39,17 +40,17 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q180184> .
 
-<https://www.wikidata.org/entity/Q672821>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "molarity" .
-
 <https://www.wikidata.org/entity/Q165>
     a 
         iop:Entity ;
     rdfs:label 
         "sea" .
+
+<https://www.wikidata.org/entity/Q672821>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "molarity" .
 
 <https://www.wikidata.org/entity/Q627>
     a 
