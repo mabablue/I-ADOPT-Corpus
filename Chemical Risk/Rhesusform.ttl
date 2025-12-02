@@ -24,7 +24,7 @@
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q181600> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q425832> .
+        _:b0 .
 
 <https://www.wikidata.org/entity/Q7873>
     a 
@@ -38,8 +38,8 @@
     rdfs:label 
         "patient" .
 
-<https://www.wikidata.org/entity/Q425832>
+_:b0
     a 
         iop:Property ;
     rdfs:label 
-        "rhesusform" .
+        "rhesus formula" .
