@@ -4,29 +4,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
-<http://example.org/F2A/CS2>
+<http://example.org/iadopt/neurology/>
     a 
         iop:Variable ;
     rdfs:label 
-        "Mean heart rate" ;
+        "BPM Mean heart rate" ;
     rdfs:comment 
-        """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
+        """(beats per minute, ECG-derived), Category: ECG metrics, Proposed    Term label: Beat per minute, Proposed Ontology: NCIT, units: Unit (beats/min) assumed; confirm measurement window.""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q1072> ;
+        <https://www.wikidata.org/entity/Q127006> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q181600> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q1144560> .
+        <https://www.wikidata.org/entity/Q11652> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "type: heart" ;
+             iop:constrains <https://www.wikidata.org/entity/Q127006> ;
+        ] .
 
-<https://www.wikidata.org/entity/Q1072>
+<https://www.wikidata.org/entity/Q127006>
     a 
         iop:Entity ;
     rdfs:label 
-        "heart" .
+        "contractions" .
 
 <https://www.wikidata.org/entity/Q181600>
     a 
@@ -40,8 +47,8 @@
     rdfs:label 
         "mean" .
 
-<https://www.wikidata.org/entity/Q1144560>
+<https://www.wikidata.org/entity/Q11652>
     a 
         iop:Property ;
     rdfs:label 
-        "rate" .
+        "frequency" .
