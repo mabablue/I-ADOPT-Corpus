@@ -14,41 +14,36 @@ ex:glvar
         """solubility of molecular oxygen from air in water with MilliQ (10.2MOhm) purity at local air conditions""" ;
     rdfs:comment 
         """solubility; molecular oxygen; air; water; MilliQ (10.2MOhm) purity; at local air conditions""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/82" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q5203615> ;
+        <https://www.wikidata.org/entity/Q5203615> ;
     iop:hasMatrix 
         ex:Matrix ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q170731> ;
+        <https://www.wikidata.org/entity/Q170731> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "state: gaseous phase" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
+             iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: liquid phase" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at local air conditions" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q170731> ;
+             iop:constrains <https://www.wikidata.org/entity/Q170731> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "quality: MilliQ purity (18.2 MOhm)" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: at solid-liquid equilibrium" ;
              iop:constrains ex:Matrix ;
         ] .
 
-<https://www.wikidata.org/wiki/Q5203615>
+<https://www.wikidata.org/entity/Q5203615>
     a 
         iop:Entity ;
     rdfs:label 
@@ -61,23 +56,23 @@ ex:Matrix
     rdfs:label 
         "two-phase solid-liquid system" ;
     iop:hasSource 
-        <https://www.wikidata.org/wiki/Q2270> ;
+        <https://www.wikidata.org/entity/Q2270> ;
     iop:hasTarget 
-        <https://www.wikidata.org/wiki/Q283> .
+        <https://www.wikidata.org/entity/Q283> .
 
-<https://www.wikidata.org/wiki/Q170731>
+<https://www.wikidata.org/entity/Q170731>
     a 
         iop:Property ;
     rdfs:label 
         "solubility" .
 
-<https://www.wikidata.org/wiki/Q2270>
+<https://www.wikidata.org/entity/Q2270>
     a 
         iop:Entity ;
     rdfs:label 
         "air" .
 
-<https://www.wikidata.org/wiki/Q283>
+<https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
