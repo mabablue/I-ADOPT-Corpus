@@ -3,58 +3,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 
-<http://example.org/iadopt/env/SurfRunoff>
+<http://example.org/iadopt/Env/PrecRate>
     a 
         iop:Variable ;
     rdfs:label 
-        "Daily Maximum Hourly Precipitation Rate" ;
+        "Daily maximum hourly precipitation rate" ;
     rdfs:comment 
-        """Daily Maximum Hourly Precipitation Rate, measured in kg m⁻² s⁻¹""" ;
+        """Daily maximum hourly precipitation rate, measured in kg m⁻² s⁻¹""" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q283> ;
+    iop:hasMatrix 
+        ex:Matrix ;
     iop:hasStatisticalModifier 
-        _:b1 ;
+        <https://www.wikidata.org/wiki/Q10578722> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q55753416> ;
+        <https://www.wikidata.org/wiki/Q3265048> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: rain" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "aggregation: daily" ;
-             iop:constrains _:b1 ;
+             iop:constrains <https://www.wikidata.org/wiki/Q10578722> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "aggregation: hourly" ;
-             iop:constrains _:b1 ;
+             iop:constrains <https://www.wikidata.org/wiki/Q10578722> ;
         ] .
-
-_:b0
-    a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q283> ;
-    iop:hasDenominator 
-        _:b2 .
-
-_:b1
-    a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "maximum" .
-
-<https://www.wikidata.org/wiki/Q55753416>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "volume flux" .
 
 <https://www.wikidata.org/wiki/Q283>
     a 
@@ -62,7 +35,36 @@ _:b1
     rdfs:label 
         "water" .
 
-_:b2
+ex:Matrix
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    rdfs:label 
+        "vegetation-soil system" ;
+    iop:hasSource 
+        <https://www.wikidata.org/wiki/Q8104> ;
+    iop:hasTarget 
+        <https://www.wikidata.org/wiki/Q36133> .
+
+<https://www.wikidata.org/wiki/Q10578722>
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "maximum" .
+
+<https://www.wikidata.org/wiki/Q3265048>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "mass flux" .
+
+<https://www.wikidata.org/wiki/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
+
+<https://www.wikidata.org/wiki/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
