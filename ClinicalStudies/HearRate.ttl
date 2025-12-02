@@ -14,33 +14,33 @@
     rdfs:comment 
         """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q1072> ;
+        <https://www.wikidata.org/entity/Q1072> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q181600> ;
+        <https://www.wikidata.org/entity/Q181600> ;
     iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q2796622> ;
+        <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q1144560> .
+        <https://www.wikidata.org/entity/Q1144560> .
 
-<https://www.wikidata.org/wiki/Q1072>
+<https://www.wikidata.org/entity/Q1072>
     a 
         iop:Entity ;
     rdfs:label 
         "heart" .
 
-<https://www.wikidata.org/wiki/Q181600>
+<https://www.wikidata.org/entity/Q181600>
     a 
         iop:Entity ;
     rdfs:label 
         "patient" .
 
-<https://www.wikidata.org/wiki/Q2796622>
+<https://www.wikidata.org/entity/Q2796622>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "mean" .
 
-<https://www.wikidata.org/wiki/Q1144560>
+<https://www.wikidata.org/entity/Q1144560>
     a 
         iop:Property ;
     rdfs:label 
