@@ -14,36 +14,32 @@ ex:densvar
         """mass density of a 10.00 mL sample of ACS reagent grade (99.0 (v/v)) benzene at a room temperature""" ;
     rdfs:comment 
         """mass density; 10.00 mL sample; ACS reagent grade (99.0 (v/v)); benzene; at a room temperature""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP63.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/85" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q2270> ;
+        <https://www.wikidata.org/entity/Q2270> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q29539> ;
+        <https://www.wikidata.org/entity/Q29539> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: at room temperature" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q29539> ;
+             iop:constrains <https://www.wikidata.org/entity/Q29539> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "size: 10.00 mL sample" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
+             iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "quality: ACS reagent grade (99.0 (v/v))" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
+             iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q2270>
+<https://www.wikidata.org/entity/Q2270>
     a 
         iop:Entity ;
     rdfs:label 
         "benzene (C6H6)" .
 
-<https://www.wikidata.org/wiki/Q29539>
+<https://www.wikidata.org/entity/Q29539>
     a 
         iop:Property ;
     rdfs:label 
