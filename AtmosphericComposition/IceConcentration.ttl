@@ -17,30 +17,30 @@ ex:IceWater
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q589446> .
+        <https://www.wikidata.org/entity/Q589446> .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q23392> ;
+        <https://www.wikidata.org/entity/Q23392> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q8104> .
+        <https://www.wikidata.org/entity/Q8104> .
 
-<https://www.wikidata.org/wiki/Q589446>
+<https://www.wikidata.org/entity/Q589446>
     a 
         iop:Property ;
     rdfs:label 
         "mass concentration" .
 
-<https://www.wikidata.org/wiki/Q23392>
+<https://www.wikidata.org/entity/Q23392>
     a 
         iop:Entity ;
     rdfs:label 
         "ice" .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
