@@ -12,11 +12,11 @@
     rdfs:comment 
         """Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel.""" ;
     iop:hasObjectOfInterest 
-        ex:OoI ;
+        <https://www.wikidata.org/wiki/Q11379> ;
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        ex:Prop ;
+        <https://www.wikidata.org/wiki/Q3481047> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "via: parallel-polarized channel" ;
@@ -27,7 +27,7 @@
              iop:constrains _:b2 ;
         ] .
 
-ex:OoI
+<https://www.wikidata.org/wiki/Q11379>
     a 
         iop:Entity ;
     rdfs:label 
@@ -37,24 +37,26 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasSource 
-        _:b2 ;
+    rdfs:label 
+        "bc_0_b1_b0" ;
     iop:hasTarget 
-        _:b1 .
+        _:b1 ;
+    iop:hasSource 
+        _:b2 .
 
-ex:Prop
+<https://www.wikidata.org/wiki/Q3481047>
     a 
         iop:Property ;
     rdfs:label 
         "ratio" .
 
-_:b2
+_:b1
     a 
         iop:Entity ;
     rdfs:label 
         "backscattered light" .
 
-_:b1
+_:b2
     a 
         iop:Entity ;
     rdfs:label 
