@@ -13,10 +13,7 @@ ex:Variable
     skos:definition 
         """QC flags for radial velocity variance of water current, good data flag for those whose temporal variance is smaller than a maximum variance threshold.""" ;
     rdfs:comment "HCSS Radial velocity variance of water current, quality flag, good if under threshold value" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP22.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP82.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP90.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/77> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/77" ;
     iop:hasObjectOfInterest 
         ex:OoI ;
     iop:hasProperty 
