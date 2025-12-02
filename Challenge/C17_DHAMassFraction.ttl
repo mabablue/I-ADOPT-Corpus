@@ -13,7 +13,7 @@ ex:C17
         "Docosahexaenoic acid content per dry weight (DHA content/ C22:6 n-3 content)" ;
     skos:definition 
         """The amount of docosahexaenoic acid relative to dry weight in an organism.""" ;
-    rdfs:comment "docosahexaenoic acid, organism, mass fraction, dry -> state: dry, ADD: ratio: mass per mass" ;
+    rdfs:comment "docosahexaenoic acid, organism, mass fraction, dry -> state: dry" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/23" ;
     iop:hasObjectOfInterest 
         _:b0 ;
