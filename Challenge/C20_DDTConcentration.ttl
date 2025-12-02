@@ -18,16 +18,6 @@ ex:C20
         """Concentration of DDT in a given year at a site impacted by industry.""" ;
     rdfs:comment 
         """DDT; due to: industry; soil; mass fraction; temporal extent: 1 year""" ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP80.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/26" ;
     iop:hasObjectOfInterest 
