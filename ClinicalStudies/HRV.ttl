@@ -26,7 +26,7 @@
     iop:hasStatisticalModifier 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q189962> ;
+        <https://www.wikidata.org/entity/Q189962> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "type: heart" ;
@@ -55,7 +55,7 @@ _:b0
     rdfs:label 
         "variation" .
 
-<https://www.wikidata.org/wiki/Q189962>
+<https://www.wikidata.org/entity/Q189962>
     a 
         iop:Property ;
     rdfs:label 
