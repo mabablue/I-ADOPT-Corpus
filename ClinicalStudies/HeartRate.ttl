@@ -13,6 +13,8 @@
         iop:Variable ;
     rdfs:label 
         "BPM Mean heart rate" ;
+    skos:definition 
+        """solubility (g/L) of 99.82 (w/w) pure benzene in deionized water at phase equilibrium and 298.15 K""" ;    
     rdfs:comment 
         """(beats per minute, ECG-derived), Category: ECG metrics, Proposed    Term label: Beat per minute, Proposed Ontology: NCIT, units: Unit (beats/min) assumed; confirm measurement window.""" ;
     iop:hasObjectOfInterest 
