@@ -13,38 +13,36 @@ ex:C10
     skos:definition  
         """Peak acceleration measured on the earth surface when facing seismic events, like earthquakes.""" ;
     rdfs:comment "ground, maximum, acceleration, due to: seismic event, surface -> location: surface" ;
-	iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
-	iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/16> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/16" ;
 	iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q36133> ;
+        <https://www.wikidata.org/entity/Q36133> ;
     iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q10578722> ;
+        <https://www.wikidata.org/entity/Q10578722> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11376> ;
+        <https://www.wikidata.org/entity/Q11376> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "surface" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q36133> ;
+             iop:constrains <https://www.wikidata.org/entity/Q36133> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "due to seismic event" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11376> ;
+             iop:constrains <https://www.wikidata.org/entity/Q11376> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q36133>
+<https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
         "ground" .
 
-<https://www.wikidata.org/wiki/Q10578722>
+<https://www.wikidata.org/entity/Q10578722>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "maximum" .
 
-<https://www.wikidata.org/wiki/Q11376>
+<https://www.wikidata.org/entity/Q11376>
     a 
         iop:Property ;
     rdfs:label 
