@@ -23,10 +23,6 @@ ex:C19
         <https://www.wikidata.org/entity/Q1366187> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "ratio: mass per time" ;
-             iop:constrains <https://www.wikidata.org/entity/Q1366187> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "state: dry" ;
              iop:constrains <https://www.wikidata.org/entity/Q7239> ;
         ] ,
