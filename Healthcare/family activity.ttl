@@ -20,42 +20,42 @@
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/110" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q25235> ;
+        <https://www.wikidata.org/entity/Q25235> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q181600> ;
+        <https://www.wikidata.org/entity/Q181600> ;
     iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q2796622> ;
+        <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11563> ;
+        <https://www.wikidata.org/entity/Q11563> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: spent with family" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q25235> ;
+             iop:constrains <https://www.wikidata.org/entity/Q25235> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "aggregation: weekly" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2796622> ;
+             iop:constrains <https://www.wikidata.org/entity/Q2796622> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q25235>
+<https://www.wikidata.org/entity/Q25235>
     a 
         iop:Entity ;
     rdfs:label 
         "hours" .
 
-<https://www.wikidata.org/wiki/Q181600>
+<https://www.wikidata.org/entity/Q181600>
     a 
         iop:Entity ;
     rdfs:label 
         "patient" .
 
-<https://www.wikidata.org/wiki/Q2796622>
+<https://www.wikidata.org/entity/Q2796622>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "mean" .
 
-<https://www.wikidata.org/wiki/Q11563>
+<https://www.wikidata.org/entity/Q11563>
     a 
         iop:Property ;
     rdfs:label 
