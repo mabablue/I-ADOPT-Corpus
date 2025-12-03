@@ -16,7 +16,7 @@ ex:
     rdfs:comment
         "northward component of water velocity in a water body; confidence interval" ;
     ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/blob/main/Ocean%20-%20HFR/EACC.ttl" ;
+        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/43" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
