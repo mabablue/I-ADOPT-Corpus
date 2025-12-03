@@ -3,21 +3,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C24
     a 
         iop:Variable ;
     rdfs:label 
-        "dose of applied nanomaterial internalised by a specific cell population (or per single cell) - particle number / cell area" ;
+        "dose of applied nanomaterial internalised by a specific cell (number per cell)" ;
     skos:definition 
-        """the amount of the applied dose of nanomaterial - particle number per cell area - that has been internalised by a cell population (or per specific cell)""" ;
+        """ Number of particles internalised into the cell over the duration of the experiment""" ;
     rdfs:comment
-        """nanomaterial; cell membrane; number; location: intracellular; normalization: per area; ADD: particle number per cell area""" ;
+        """nanomaterial; cell membrane; number per cell; location: intracellular, duration of the experiment""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/30" ;
     iop:hasObjectOfInterest 
@@ -25,11 +20,15 @@ ex:C24
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q20088819> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q108914965> ;
+        _:b1 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
              iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "time extent. duration of the experiment" ;
+             iop:constrains _:b1 ;
         ] .
 
 _:b0
@@ -39,7 +38,7 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q967847> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q54888819> .
+        <https://www.wikidata.org/entity/Q7868> .
 
 <https://www.wikidata.org/entity/Q20088819>
     a 
@@ -47,11 +46,11 @@ _:b0
     rdfs:label 
         "group of cells" .
 
-<https://www.wikidata.org/entity/Q108914965>
+_:b1
     a 
         iop:Property ;
     rdfs:label 
-        "areal number density" .
+        "number per cell" .
 
 <https://www.wikidata.org/entity/Q967847>
     a 
@@ -59,8 +58,8 @@ _:b0
     rdfs:label 
         "nanomaterial" .
 
-<https://www.wikidata.org/entity/Q54888819>
+<https://www.wikidata.org/entity/Q7868>
     a 
         iop:Entity ;
     rdfs:label 
-        "cell membrane" .
+        "cell" .
