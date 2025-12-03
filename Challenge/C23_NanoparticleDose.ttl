@@ -13,23 +13,25 @@ ex:C23
     a 
         iop:Variable ;
     rdfs:label 
-        "dose of applied nanomaterial internalised by a specific cell population (or per single cell) -mass per cell area" ;
+        "dose of applied nanomaterial internalised into the cell - mass per cell" ;
     skos:definition 
-        """the amount of the applied dose of nanomaterial that has been internalised by a cell population, mass per cell area""" ;
+        """the mass of nanomaterial internalised into the cell over the duration of the experiment, mass per cell""" ;
     rdfs:comment
-        """nanomaterial; location: intracellular; cell membrane; mass; normalization: per area""" ;
-    ex:issue
-        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/29" ;
+        """nanomaterial; location: intracellular; cell ; mass per cell; ADD: group of cells""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q20088819> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q1907514> ;
+        _:b1 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
              iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "time extent: duration of the experiment" ;
+             iop:constrains _:b1 ;
         ] .
 
 _:b0
@@ -39,7 +41,7 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q967847> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q54888819> .
+        <https://www.wikidata.org/entity/Q7868> .
 
 <https://www.wikidata.org/entity/Q20088819>
     a 
@@ -47,11 +49,11 @@ _:b0
     rdfs:label 
         "group of cells" .
 
-<https://www.wikidata.org/entity/Q1907514>
+_:b1
     a 
         iop:Property ;
     rdfs:label 
-        "surface density" .
+        "mass per cell" .
 
 <https://www.wikidata.org/entity/Q967847>
     a 
@@ -59,8 +61,8 @@ _:b0
     rdfs:label 
         "nanomaterial" .
 
-<https://www.wikidata.org/entity/Q54888819>
+<https://www.wikidata.org/entity/Q7868>
     a 
         iop:Entity ;
     rdfs:label 
-        "cell membrane" .
+        "cell" .
