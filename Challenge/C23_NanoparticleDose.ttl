@@ -13,11 +13,12 @@ ex:C23
     a 
         iop:Variable ;
     rdfs:label 
-        "dose of applied nanomaterial internalised into the cell - mass per cell" ;
+        "Cellular dose in vitro of nanomaterials (mass / cell)" ;
     skos:definition 
         """the mass of nanomaterial internalised into the cell over the duration of the experiment, mass per cell""" ;
     rdfs:comment
         """nanomaterial; location: intracellular; cell ; mass per cell; ADD: group of cells""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/29" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
