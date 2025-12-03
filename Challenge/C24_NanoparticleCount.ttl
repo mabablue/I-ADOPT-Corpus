@@ -50,7 +50,7 @@ _:b1
     a 
         iop:Property ;
     rdfs:label 
-        "number per cell" .
+        "number per entity" .
 
 <https://www.wikidata.org/entity/Q967847>
     a 
