@@ -9,8 +9,9 @@
         iop:Variable ;
     rdfs:label 
         "Solar energy production of building per month" ;
-    rdfs:comment 
-        """Solar energy production of building in kWh""" ;
+    skos:definition "Solar energy production of building in kWh";
+    rdfs:comment "origin: photovoltaik panel, temporal extent: month, energy, amount, building" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131";
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
