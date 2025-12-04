@@ -15,16 +15,12 @@
         """Surface-> location: at the surface; long-wave; radiation; downwards; measured in Wm-2-> energy flux; ADD: study area; ground; atmosphere""" ;
    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/109" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q18335> ;
     iop:hasMatrix 
-        _:b1 ;
+        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q5377054> ;
     iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "location: at the surface" ;
-             iop:constrains <https://www.wikidata.org/entity/Q36133> ;
-        ] ,
         [ a iop:Constraint ;
              rdfs:label "type: long-wave" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
@@ -32,31 +28,11 @@
         [ a iop:Constraint ;
              rdfs:label "type: downwards" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "location: at the surface" ;
+             iop:constrains <https://www.wikidata.org/entity/Q6501125> ;
         ] .
-
-_:b0
-    a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q18335> ;
-    iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q112117182> .
-
-_:b1
-    a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasSource 
-        <https://www.wikidata.org/entity/Q8104> ;
-    iop:hasTarget 
-        <https://www.wikidata.org/entity/Q36133> .
-
-<https://www.wikidata.org/entity/Q5377054>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "energy flux" .
 
 <https://www.wikidata.org/entity/Q18335>
     a 
@@ -64,11 +40,20 @@ _:b1
     rdfs:label 
         "radiation" .
 
-<https://www.wikidata.org/entity/Q112117182>
+_:b0
     a 
-        iop:Entity ;
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    iop:hasSource 
+        <https://www.wikidata.org/entity/Q8104> ;
+    iop:hasTarget 
+        <https://www.wikidata.org/entity/Q6501125> .
+
+<https://www.wikidata.org/entity/Q5377054>
+    a 
+        iop:Property ;
     rdfs:label 
-        "study area" .
+        "energy flux" .
 
 <https://www.wikidata.org/entity/Q8104>
     a 
@@ -76,7 +61,7 @@ _:b1
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/entity/Q36133>
+<https://www.wikidata.org/entity/Q6501125>
     a 
         iop:Entity ;
     rdfs:label 
