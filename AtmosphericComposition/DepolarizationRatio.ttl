@@ -12,11 +12,11 @@
     rdfs:comment 
         """Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel.""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q11379> ;
+        <https://www.wikidata.org/entity/Q7391292> ;
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q3481047> ;
+        <https://www.wikidata.org/entity/Q2095> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "via: parallel-polarized channel" ;
@@ -27,11 +27,11 @@
              iop:constrains _:b2 ;
         ] .
 
-<https://www.wikidata.org/wiki/Q11379>
+<https://www.wikidata.org/entity/Q7391292>
     a 
         iop:Entity ;
     rdfs:label 
-        "energy" .
+        "air" .
 
 _:b0
     a 
@@ -44,11 +44,11 @@ _:b0
     iop:hasSource 
         _:b2 .
 
-<https://www.wikidata.org/wiki/Q3481047>
+<https://www.wikidata.org/entity/Q2095>
     a 
         iop:Property ;
     rdfs:label 
-        "ratio" .
+        "depolarization ratio" .
 
 _:b1
     a 
