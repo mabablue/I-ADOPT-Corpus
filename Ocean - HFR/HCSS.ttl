@@ -10,9 +10,9 @@ ex:someVar
     a 
         iop:Variable ;
     rdfs:label 
-        "HCSS Radial velocity variance of water current relative to instrument  in the water body by high frequency radar" ;
+        "HCSS Radial velocity variance of water current relative to instrument in the water body by high frequency radar" ;
     skos:definition 
-        """Standard deviation of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
+        """Variance of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
     rdfs:comment "water current; water body; at the surface; variance; over the temporal coverage period; sea; velocity; relative to instrument; radial" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/64" ;
     iop:hasObjectOfInterest 
