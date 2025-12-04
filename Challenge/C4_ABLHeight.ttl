@@ -13,7 +13,7 @@ ex:C4
     skos:definition 
         """Atmospheric boundary layer height defined by temperature inversion.""" ;
     rdfs:comment
-        """Atmospheric boundary layer, height, temperature inversion (ADD atmosphere, above ground surface).""" ;    
+        """Atmospheric boundary layer, height, temperature inversion (ADD atmosphere, above ground surface, defined by: temperature inversion).""" ;    
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/10" ;
     iop:hasObjectOfInterest 
@@ -24,7 +24,7 @@ ex:C4
         <https://www.wikidata.org/entity/Q208826> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "due to: temperature inversion" ;
+             rdfs:label "defined by: temperature inversion" ;
              iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
