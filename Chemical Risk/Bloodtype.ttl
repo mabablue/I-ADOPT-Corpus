@@ -22,7 +22,7 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7873> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q181600> ;
+        <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q47657> .
 
@@ -32,11 +32,11 @@
     rdfs:label 
         "blood" .
 
-<https://www.wikidata.org/entity/Q181600>
+<https://www.wikidata.org/entity/Q5>
     a 
         iop:Entity ;
     rdfs:label 
-        "patient" .
+        "person" .
 
 <https://www.wikidata.org/entity/Q47657>
     a 
