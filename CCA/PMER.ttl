@@ -11,15 +11,15 @@
         "Mean sea level pressure" ;
     rdfs:comment 
         """Mean sea level pressure expressed in Pa""" ;
+   rdfs:comment 
+"""pressure; location: mean sea level; ADD: atmosphere""" ; 
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q8104> ;
-    iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q2796622> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q39552> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "location: sea level" ;
+             rdfs:label "location: mean sea level" ;
              iop:constrains <https://www.wikidata.org/wiki/Q8104> ;
         ] .
 
