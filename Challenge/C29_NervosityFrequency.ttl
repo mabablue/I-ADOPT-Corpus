@@ -13,11 +13,11 @@ ex:C29
     skos:definition
         """In the past 30 days, how often did you feel nervous?""" ;
     rdfs:comment
-        """nervousness; person; frequency; during last 30 days""" ;
+        """feel -> feeling; nervous -> type:nervous; during last 30 days; ADD: person; frequency""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/35" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q1978097> ;
+        <https://www.wikidata.org/entity/Q205555> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
@@ -26,13 +26,17 @@ ex:C29
         [ a iop:Constraint ;
              rdfs:label "temporal extent: during last 30 days" ;
              iop:constrains <https://www.wikidata.org/entity/Q11652> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: nervous" ;
+             iop:constrains <https://www.wikidata.org/entity/Q205555> ;
         ] .
 
-<https://www.wikidata.org/entity/Q1978097>
+<https://www.wikidata.org/entity/Q205555>
     a 
         iop:Entity ;
     rdfs:label 
-        "nervousness" .
+        "feeling" .
 
 <https://www.wikidata.org/entity/Q5>
     a 
