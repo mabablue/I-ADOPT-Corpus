@@ -18,7 +18,7 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q127006> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q181600> ;
+        <hhttps://www.wikidata.org/wiki/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
@@ -35,11 +35,11 @@
     rdfs:label 
         "contractions" .
 
-<https://www.wikidata.org/entity/Q181600>
+<hhttps://www.wikidata.org/wiki/Q5>
     a 
         iop:Entity ;
     rdfs:label 
-        "patient" .
+        "person" .
 
 <https://www.wikidata.org/entity/Q2796622>
     a 
