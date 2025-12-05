@@ -16,7 +16,7 @@
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        _:b1 ;
+        <https://www.wikidata.org/entity/Q176449> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "origin: Ringhals nuclear plant" ;
@@ -31,16 +31,18 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
+    rdfs:label 
+        "bc_0_b39_b0" ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q2515411> ;
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q36133> .
 
-_:b1
+<https://www.wikidata.org/entity/Q176449>
     a 
         iop:Property ;
     rdfs:label 
-        "atoms per mass" .
+        "number density" .
 
 <https://www.wikidata.org/entity/Q2515411>
     a 
