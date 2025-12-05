@@ -22,12 +22,7 @@ ex:C27
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q589446> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "ratio: mass per volume" ;
-             iop:constrains <https://www.wikidata.org/entity/Q589446> ;
-        ] .
+        <https://www.wikidata.org/entity/Q589446> .
 
 _:b0
     a 
