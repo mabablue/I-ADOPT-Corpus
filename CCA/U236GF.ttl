@@ -15,7 +15,7 @@
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        _:b1 ;
+        <https://www.wikidata.org/entity/Q176449> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: global" ;
@@ -30,25 +30,25 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q5955496> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q36133> .
+        <https://www.wikidata.org/entity/Q36133> ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/entity/Q5955496> .
 
-_:b1
+<https://www.wikidata.org/entity/Q176449>
     a 
         iop:Property ;
     rdfs:label 
-        "atoms per mass" .
-
-<https://www.wikidata.org/entity/Q5955496>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "Uranium‑236" .
+        "number density" .
 
 <https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
         "soil" .
+
+<https://www.wikidata.org/entity/Q5955496>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "Uranium‑236" .
