@@ -18,9 +18,9 @@ ex:C2
         """Thermodynamic temperature; air; in a height of 1.7 meter; daily; maximum - ADD: atmosphere (to distinguish it from indoors); 
 VDP10 for property;  VDP40 for context object; VDP66 for constraint:datum; VDP67 for constraint:condition.""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/8" ;
-    iopp:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q7391292> ;
-    iop:hasContextObject 
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q7391292> ;
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q10578722> ;
@@ -32,15 +32,21 @@ VDP10 for property;  VDP40 for context object; VDP66 for constraint:datum; VDP67
              iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "location:  in a height of 1.7 m above ground" ;
-             iop:constrains <https://www.wikidata.org/entity/Q7391292> ;
+             rdfs:label "location: 1,7 m  above ground" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7391292> ;
         ] .
 
-<https://www.wikidata.org/entity/Q7391292>
+<https://www.wikidata.org/wiki/Q7391292>
     a 
         iop:Entity ;
     rdfs:label 
         "air" .
+
+<https://www.wikidata.org/entity/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
 
 <https://www.wikidata.org/entity/Q10578722>
     a 
@@ -53,9 +59,3 @@ VDP10 for property;  VDP40 for context object; VDP66 for constraint:datum; VDP67
         iop:Property ;
     rdfs:label 
         "thermodynamic temperature" .
-
-<https://www.wikidata.org/entity/Q8104>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "atmosphere" .
