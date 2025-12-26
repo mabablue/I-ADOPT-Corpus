@@ -33,8 +33,6 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "ratio" ;
     iop:hasNumerator 
         _:b1 ;
     iop:hasDenominator 
