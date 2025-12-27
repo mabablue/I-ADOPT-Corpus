@@ -13,7 +13,7 @@ ex:slvar
     skos:definition 
         """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm, measured in mg/L""" ;
     rdfs:comment 
-        """napathalene; deionized; water; at room temperature; ADD: state:dissolved, quality: dionized""" ;
+        """napathalene; deionized; water; at room temperature; ADD: state:dissolved, quality: deionized""" ;
   ex:issue "https://github.com/mabablue/I-ADOPT-Variables/blob/d1f1a3b56a1ad46698260397e6fa66ef206ec7d3/Chemistry/SLVAR.ttl" ;
     iop:hasObjectOfInterest 
         _:b0 ;
@@ -29,7 +29,7 @@ ex:slvar
              iop:constrains <https://www.wikidata.org/entity/Q179724> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: dionized" ;
+             rdfs:label "quality: deionized" ;
              iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
