@@ -13,6 +13,8 @@
         """Northward Near-Surface Wind (v-component), measured in m s⁻¹""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q8094> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q8104> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q3711325> ;
     iop:hasConstraint 
@@ -30,6 +32,12 @@
         iop:Entity ;
     rdfs:label 
         "wind" .
+
+<https://www.wikidata.org/wiki/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
 
 <https://www.wikidata.org/wiki/Q3711325>
     a 
