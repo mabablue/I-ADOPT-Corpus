@@ -18,33 +18,25 @@ ex:ActinicFlux
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q18335> ;
     iop:hasMatrix 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q5377054> ;
+        <https://www.wikidata.org/wiki/Q83699542> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "type: upwelling" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "type: UV-A and visible (297-640 at nm wavelength)" ;
+             rdfs:label "size: 297-640 nm" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: actinic" ;
-             iop:constrains <https://www.wikidata.org/entity/Q18335> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q83699542> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: scattered and reflected" ;
-             iop:constrains <https://www.wikidata.org/entity/Q18335> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "type: upward" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q47091889> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "location: at the surface" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2> ;
+             rdfs:label "type: spectral" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q83699542> ;
         ] .
 
 <https://www.wikidata.org/entity/Q18335>
@@ -53,29 +45,14 @@ ex:ActinicFlux
     rdfs:label 
         "radiation" .
 
-_:b0
+<https://www.wikidata.org/wiki/Q8104>
     a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasTarget 
-        <https://www.wikidata.org/wiki/Q47091889> ;
-    iop:hasSource 
-        <https://www.wikidata.org/wiki/Q2> .
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
 
-<https://www.wikidata.org/entity/Q5377054>
+<https://www.wikidata.org/wiki/Q83699542>
     a 
         iop:Property ;
     rdfs:label 
-        "energy flux" .
-
-<https://www.wikidata.org/wiki/Q47091889>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "hemisphere" .
-
-<https://www.wikidata.org/wiki/Q2>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "earth" .
+        "photon flux" .
