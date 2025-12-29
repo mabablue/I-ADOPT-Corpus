@@ -1,1 +1,1 @@
-This repository is used to play around with I-ADOPT variable descriptions. 
+This repository is used to create a corpus of valid I-ADOPT representations to be used in benchmark studies.
