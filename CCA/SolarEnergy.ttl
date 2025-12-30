@@ -13,8 +13,11 @@
         iop:Variable ;
     rdfs:label 
         "Solar energy production of building per month" ;
+    skos:definition 
+        """Solar energy production of building in kWh""" ;
     rdfs:comment 
         """Solar energy production of building in kWh""" ;
+   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q40015> ;
     iop:hasMatrix 
