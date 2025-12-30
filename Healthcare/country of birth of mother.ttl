@@ -17,7 +17,7 @@
         """country of birth of mother""" ;
     rdfs:comment
         "birth; person; country; condition: mother of patient" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/112" ;
+ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/112" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q14819852> ;
     iop:hasMatrix 
