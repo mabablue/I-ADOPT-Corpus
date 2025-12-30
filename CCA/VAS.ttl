@@ -9,37 +9,40 @@
         iop:Variable ;
     rdfs:label 
         "Northward Near-Surface Wind" ;
+    skos:definition 
+        """Northward Near-Surface Wind (v-component), measured in m s⁻¹""" ;
     rdfs:comment 
         """Northward Near-Surface Wind (v-component), measured in m s⁻¹""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/116" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q8094> ;
+        <https://www.wikidata.org/entity/Q8094> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q8104> ;
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q3711325> ;
+        <https://www.wikidata.org/entity/Q3711325> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: near surface" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q8094> ;
+             iop:constrains <https://www.wikidata.org/entity/Q8094> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: northward" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q8094> ;
+             iop:constrains <https://www.wikidata.org/entity/Q8094> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q8094>
+<https://www.wikidata.org/entity/Q8094>
     a 
         iop:Entity ;
     rdfs:label 
         "wind" .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/wiki/Q3711325>
+<https://www.wikidata.org/entity/Q3711325>
     a 
         iop:Property ;
     rdfs:label 
