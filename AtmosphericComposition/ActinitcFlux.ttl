@@ -18,25 +18,21 @@ ex:ActinicFlux
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q18335> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q8104> ;
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q83699542> ;
+        <https://www.wikidata.org/entity/Q83699542> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "type: upwelling" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "size: 297-640 nm" ;
+             rdfs:label "range: 297-640 nm wavelength" ;
              iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: actinic" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q83699542> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "type: spectral" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q83699542> ;
+             iop:constrains <https://www.wikidata.org/entity/Q83699542> ;
         ] .
 
 <https://www.wikidata.org/entity/Q18335>
@@ -45,13 +41,13 @@ ex:ActinicFlux
     rdfs:label 
         "radiation" .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/wiki/Q83699542>
+<https://www.wikidata.org/entity/Q83699542>
     a 
         iop:Property ;
     rdfs:label 
