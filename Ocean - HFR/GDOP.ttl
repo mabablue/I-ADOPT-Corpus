@@ -5,28 +5,31 @@
 @prefix ex: <http://example.org/iadopt/HFR> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:GDOP
     a 
         iop:Variable ;
     rdfs:label 
         "GDOP Geometric dilution of precision " ;
-    skos:definition
+    skos:definition 
         """Geometric dilution of precision of the relative position, based on the position of the receiver and the transmitters.""" ;
-    rdfs:comment "relative position; dilution of precision; position of receiver; position of transmitters" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/44" ;
+    rdfs:comment 
+        """Geometric dilution of precision of the relative position, based on the position of the receiver and the transmitters.""" ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/44> ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q23008351> ;
+        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q616896> .
 
-<https://www.wikidata.org/entity/Q23008351>
+_:b0
     a 
         iop:Entity ,
         iop:SymmetricSystem ;
     iop:hasPart 
-        _:b0 ,
-        _:b1 .
+        _:b1 ,
+        _:b2 .
 
 <https://www.wikidata.org/entity/Q616896>
     a 
@@ -34,13 +37,13 @@ ex:GDOP
     rdfs:label 
         "dilution of precision" .
 
-_:b0
+_:b1
     a 
         iop:Entity ;
     rdfs:label 
         "position of receiver" .
 
-_:b1
+_:b2
     a 
         iop:Entity ;
     rdfs:label 
