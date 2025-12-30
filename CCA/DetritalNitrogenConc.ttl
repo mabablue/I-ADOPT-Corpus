@@ -9,8 +9,11 @@ ex:nitrCon
         iop:Variable ;
     rdfs:label 
         "Labile detrital nitrogen concentration in the seabed" ;
+    skos:definition 
+        """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
     rdfs:comment 
         """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/88" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
