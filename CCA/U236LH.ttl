@@ -13,8 +13,11 @@
         iop:Variable ;
     rdfs:label 
         "Realistic releases of U236 from La Hague" ;
+    skos:definition 
+        """Realistic releases of U236 from La Hague (U236LH) in atoms kg-1""" ;
     rdfs:comment 
         """Realistic releases of U236 from La Hague (U236LH) in atoms kg-1""" ;
+ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/134" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
