@@ -10,8 +10,11 @@ ex:ElderlyAlone
         iop:Variable ;
     rdfs:label 
         "Number of elderly people living alone in a statistical unit" ;
+    skos:definition 
+        """number of elderly people living alone in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
     rdfs:comment 
         """number of elderly people living alone in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/92" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q215627> ;
     iop:hasMatrix 
