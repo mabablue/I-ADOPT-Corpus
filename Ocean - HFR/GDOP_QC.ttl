@@ -13,24 +13,24 @@ ex:Variable
         "GDOP threshold quality flag " ;
     rdfs:comment 
         """QC flags resulting from setting a threshold on GDOP. Setting a threshold on GDOP for total combination avoids the combination of radials with an intersection angle below a certain value.""" ;
-ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/50" ;  
-iop:hasObjectOfInterest 
-        ex:OoI ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/50" ;  
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/entity/Q616896> ;
     iop:hasProperty 
-        ex:Prop ;
+        <https://www.wikidata.org/entity/Q137642315> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "threshold: good if under the threshold value" ;
-             iop:constrains ex:Prop ;
+             iop:constrains <https://www.wikidata.org/entity/Q137642315> ;
         ] .
 
-ex:OoI
+<https://www.wikidata.org/entity/Q616896>
     a 
         iop:Entity ;
     rdfs:label 
         "GDOP" .
 
-ex:Prop
+<https://www.wikidata.org/entity/Q137642315>
     a 
         iop:Property ;
     rdfs:label 
