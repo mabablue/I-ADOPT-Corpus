@@ -18,7 +18,7 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q127006> ;
     iop:hasMatrix 
-        <hhttps://www.wikidata.org/wiki/Q5> ;
+        <hhttps://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
@@ -35,7 +35,7 @@
     rdfs:label 
         "contractions" .
 
-<hhttps://www.wikidata.org/wiki/Q5>
+<hhttps://www.wikidata.org/entity/Q5>
     a 
         iop:Entity ;
     rdfs:label 
