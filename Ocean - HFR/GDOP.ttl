@@ -17,7 +17,7 @@ ex:GDOP
         """Geometric dilution of precision of the relative position, based on the position of the receiver and the transmitters.""" ;
     rdfs:comment 
         """Geometric dilution of precision of the relative position, based on the position of the receiver and the transmitters.""" ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/44> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/44" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
