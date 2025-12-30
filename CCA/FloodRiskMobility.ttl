@@ -10,12 +10,16 @@ ex:FloodRiskMobility
         iop:Variable ;
     rdfs:label 
         "Flood risk index related to mobility and accessibility " ;
+    skos:definition 
+        """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
     rdfs:comment 
         """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
+    ex:issue 
+     "https://github.com/mabablue/I-ADOPT-examples-playground/issues/98" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q3409269> ;
+        <https://www.wikidata.org/entity/Q3409269> ;
     iop:hasProperty 
         _:b1 ;
     iop:hasConstraint 
@@ -25,7 +29,7 @@ ex:FloodRiskMobility
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: mobility and accessibility" ;
@@ -38,7 +42,7 @@ _:b0
     rdfs:label 
         "flood risk" .
 
-<https://www.wikidata.org/wiki/Q3409269>
+<https://www.wikidata.org/entity/Q3409269>
     a 
         iop:Entity ;
     rdfs:label 
