@@ -13,8 +13,11 @@
         iop:Variable ;
     rdfs:label 
         "Global fallout of U‑236 (U236GF)" ;
+    skos:definition 
+        """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
     rdfs:comment 
         """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
+   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/130" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
