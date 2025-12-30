@@ -13,38 +13,38 @@ ex:ElderlyAlone
     rdfs:comment 
         """number of elderly people living alone in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q215627> ;
+        <https://www.wikidata.org/entity/Q215627> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q3409269> ;
+        <https://www.wikidata.org/entity/Q3409269> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11563> ;
+        <https://www.wikidata.org/entity/Q11563> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: living alone" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q215627> ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: age over 65 years" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q215627> ;
+             iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q215627>
+<https://www.wikidata.org/entity/Q215627>
     a 
         iop:Entity ;
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/wiki/Q3409269>
+<https://www.wikidata.org/entity/Q3409269>
     a 
         iop:Entity ;
     rdfs:label 
         "statistical unit" .
 
-<https://www.wikidata.org/wiki/Q11563>
+<https://www.wikidata.org/entity/Q11563>
     a 
         iop:Property ;
     rdfs:label 
