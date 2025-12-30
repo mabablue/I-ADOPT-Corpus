@@ -13,26 +13,29 @@ ex:PercentChild
         iop:Variable ;
     rdfs:label 
         "Percentage of number of children" ;
-    rdfs:comment 
+    skos:definition 
         """Percentage of number of children under 10 years versus total number of people dwelling in the buildings within a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+    rdfs:comment 
+        """Percentage of number of children under 10 years versus total number of people dwelling in the buildings within a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;   
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/96" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q3409269> ;
+        <https://www.wikidata.org/entity/Q3409269> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11229> ;
+        <https://www.wikidata.org/entity/Q11229> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+             iop:constrains <https://www.wikidata.org/entity/Q3409269> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "ratio: number per number" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11229> ;
+             iop:constrains <https://www.wikidata.org/entity/Q11229> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: age under 10 years" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7569> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7569> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: living in the housing" ;
@@ -46,29 +49,29 @@ _:b0
     rdfs:label 
         "ratio" ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q215627> ;
+        <https://www.wikidata.org/entity/Q215627> ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q7569> .
+        <https://www.wikidata.org/entity/Q7569> .
 
-<https://www.wikidata.org/wiki/Q3409269>
+<https://www.wikidata.org/entity/Q3409269>
     a 
         iop:Entity ;
     rdfs:label 
         "statistical unit" .
 
-<https://www.wikidata.org/wiki/Q11229>
+<https://www.wikidata.org/entity/Q11229>
     a 
         iop:Property ;
     rdfs:label 
         "percentage" .
 
-<https://www.wikidata.org/wiki/Q215627>
+<https://www.wikidata.org/entity/Q215627>
     a 
         iop:Entity ;
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/wiki/Q7569>
+<https://www.wikidata.org/entity/Q7569>
     a 
         iop:Entity ;
     rdfs:label 
