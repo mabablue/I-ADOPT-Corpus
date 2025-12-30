@@ -15,6 +15,9 @@ ex:FractionFloodedBuilding
         "Fraction of flooded area around building" ;
     rdfs:comment 
         """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
+    skos:definition 
+        """Fraction of flooded area above 30 cm water level within a 5 m buffer around an affected building""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/90" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
