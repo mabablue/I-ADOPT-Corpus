@@ -13,8 +13,11 @@ ex:C16
         iop:Variable ;
     rdfs:label 
         "Standard metabolic rate in mg of Oxygen per hour" ;
+    skos:definition 
+        """The measure of an ectotherm animal's baseline metabolic rate (i.e. non-active, non-stressed) measured by the milligrams of oxygen consumed in a period of time of one hour.""" ;
     rdfs:comment 
         """The measure of an ectotherm animal's baseline metabolic rate (i.e. non-active, non-stressed) measured by the milligrams of oxygen consumed in a period of time of one hour.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/22" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q5203615> ;
     iop:hasMatrix 
