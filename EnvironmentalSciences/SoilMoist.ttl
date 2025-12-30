@@ -15,7 +15,7 @@
         "Moisture in upper soil portion" ;
     rdfs:comment 
         """Moisture in upper soil portion measured in kg m-2""" ;
-ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/122"
+ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/122" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
