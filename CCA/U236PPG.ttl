@@ -13,8 +13,11 @@
         iop:Variable ;
     rdfs:label 
         "Point sources of U-236 from Pacific Proving Grounds " ;
+    skos:definition 
+        """Point sources of U-236 from Pacific Proving Grounds (U236PPG) in atoms kg-1""" ;
     rdfs:comment 
         """Point sources of U-236 from Pacific Proving Grounds (U236PPG) in atoms kg-1""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/133" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
