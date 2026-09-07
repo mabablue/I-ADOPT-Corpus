@@ -28,7 +28,7 @@ ex:PersWelfare
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: registered as residents" ;
+             rdfs:label "condition: registered as resident" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] ,
         [ a iop:Constraint ;
