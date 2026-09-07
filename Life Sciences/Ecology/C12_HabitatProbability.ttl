@@ -18,8 +18,8 @@ ex:C12
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/18" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q52105> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q11081619> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q6256> ;
     iop:hasProperty 
         <https://lod.nal.usda.gov/nalt/137027> ;
     iop:hasConstraint 
@@ -32,12 +32,12 @@ ex:C12
              iop:constrains <https://www.wikidata.org/entity/Q52105> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "region: European Union" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11081619> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "normalization: 100x100 m grid cell" ;
              iop:constrains <https://lod.nal.usda.gov/nalt/137027> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "region: European Union" ;
+             iop:constrains <https://www.wikidata.org/entity/Q6256> ;
         ] .
 
 <https://www.wikidata.org/entity/Q52105>
@@ -46,14 +46,14 @@ ex:C12
     rdfs:label 
         "habitat" .
 
-<https://www.wikidata.org/entity/Q11081619>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "land" .
-
 <https://lod.nal.usda.gov/nalt/137027>
     a 
         iop:Property ;
     rdfs:label 
         "probability" .
+
+<https://www.wikidata.org/entity/Q6256>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "country" .
