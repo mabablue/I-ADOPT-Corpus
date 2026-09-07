@@ -24,12 +24,12 @@
         <https://qudt.org/vocab/quantitykind/MassFluxDensity> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: not soaking into the ground" ;
+             rdfs:label "part: surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q36133> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "part: surface" ;
-             iop:constrains <https://www.wikidata.org/entity/Q36133> ;
+             rdfs:label "condition: not soaking into the ground" ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
 <https://www.wikidata.org/entity/Q283>
