@@ -19,7 +19,7 @@ ex:C12
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q52105> ;
     iop:hasContextObject 
-        <https://www.wikidata.org/entity/Q6256> ;
+        <https://www.wikidata.org/entity/Q3622002> ;
     iop:hasProperty 
         <https://lod.nal.usda.gov/nalt/137027> ;
     iop:hasConstraint 
@@ -37,7 +37,7 @@ ex:C12
         ] ,
         [ a iop:Constraint ;
              rdfs:label "region: European Union" ;
-             iop:constrains <https://www.wikidata.org/entity/Q6256> ;
+             iop:constrains <https://www.wikidata.org/entity/Q3622002> ;
         ] .
 
 <https://www.wikidata.org/entity/Q52105>
@@ -52,8 +52,8 @@ ex:C12
     rdfs:label 
         "probability" .
 
-<https://www.wikidata.org/entity/Q6256>
+<https://www.wikidata.org/entity/Q3622002>
     a 
         iop:Entity ;
     rdfs:label 
-        "country" .
+        "geographical area" .
